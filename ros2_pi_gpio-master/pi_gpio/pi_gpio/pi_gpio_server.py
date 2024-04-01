@@ -8,31 +8,28 @@ from rclpy.node import Node
 from pi_gpio_interface.action import GPIO as GPIO_Action
 import RPi.GPIO as GPIO
 
+a = 10
+b = 2
+
 class RaspberryPIGPIO():
-    def __init__(self, pin_id, type):
+    def __init__(self, pin_id):
         self.pin_id = pin_id
-        self.type = type.rstrip()
         GPIO.setwarnings(False)
-        #Use Broadcom pin-numbering scheme
-        GPIO.setmode(GPIO.BCM) 
-        if self.type == "in":
-            GPIO.setup(pin_id, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #Set pin as input
-            print ("Setting GPIO " + str(self.pin_id) + "-" + self.type)
-
-        elif self.type == "out":
-            GPIO.setup(pin_id, GPIO.OUT) #Set pin as output
-            print ("Setting GPIO " + str(self.pin_id) + "-" + self.type)
-
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(pin_id, GPIO.OUT) #Set pin as output
+        print ("Setting GPIO " + str(self.pin_id))
         time.sleep(0.1)
+        global pwm
+        pwm = GPIO.PWM(self.pin_id, 50)
+        pwm.start(0)
+    def set_pin(self,direction):
+        duty = a / 180 * direction + b
+        pwm.ChangeDutyCycle(duty)
+        print("direction ="), direction, "-> duty =", duty
+        time.sleep(1) 
 
-    def set_pin(self, value):
-        if value == 1:
-            GPIO.output(self.pin_id, GPIO.HIGH) #Set pin High-1
-        elif value == 0:
-            GPIO.output(self.pin_id, GPIO.LOW) #Set pin Low-0
-
-    def read_pins_from_file():
-        f = open("src/pi_gpio/gpio_pins.txt", "r")
+    def read_pins_from_file(self):
+        f = open("src/ros2_pi_gpio-master/src/pi_gpio/gpio_pins.txt", "r")
         pin_list = []
         for x in f:
             pin_list.append(x) 
@@ -49,9 +46,8 @@ class GPIOActionServer(Node):
         
         self.pin_dic = {}
         
-        for pin in pin_list:
-            pin_id, type = pin.split(',')
-            self.pin_dic[pin_id] =  RaspberryPIGPIO(int(pin_id), type)
+        for pin_id in pin_list:
+            self.pin_dic[pin_id] =  RaspberryPIGPIO(int(pin_id))
 
         self._goal_handle = None
         self._goal_lock = threading.Lock()
@@ -114,22 +110,11 @@ class GPIOActionServer(Node):
         # Publish the feedback
         goal_handle.publish_feedback(feedback_msg)
 
-        # get the pin ide and action type
         pin_id, action_type = goal_msg.split(',')   
-
-        if action_type == "high":
-            self.pin_dic[pin_id].set_pin(1)
-            time.sleep(0.1)
-            result.value = 3
-       
-        elif action_type == "low":
-            self.pin_dic[pin_id].set_pin(0)
-            time.sleep(0.1)
-            result.value = 3
-
-        elif action_type == "read":
-            result.value = GPIO.input(int(pin_id))
-
+        self.pin_dic[pin_id].set_pin(int(action_type))
+        time.sleep(0.1)
+        result.value = 3
+        
         goal_handle.succeed()
         return result
 
