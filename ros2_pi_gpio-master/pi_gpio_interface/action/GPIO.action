@@ -1,5 +1,5 @@
 # Goal
-string gpio
+int16 angle
 ---
 # Result
 int32 value
