@@ -108,7 +108,7 @@ class GPIOActionServer(Node):
         goal_handle.publish_feedback(feedback_msg)
 
         angle = goal_msg  
-        self.pin_dic[self.pin_id].set_pin(angel)
+        self.pin_dic[self.pin_id].set_pin(angle)
         time.sleep(0.1)
         result.value = 3
         
