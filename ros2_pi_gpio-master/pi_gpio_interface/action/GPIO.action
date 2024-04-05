@@ -1,5 +1,5 @@
 # Goal
-int16 angle
+int16 direction
 ---
 # Result
 int32 value
