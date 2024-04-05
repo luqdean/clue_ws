@@ -108,7 +108,7 @@ class GPIOActionServer(Node):
         goal_handle.publish_feedback(feedback_msg)
 
         direction = goal_msg  
-        self.pin_dic[self.pin_id].set_pin(direction)
+        self.pin_dic[17].set_pin(direction)
         time.sleep(0.1)
         result.value = 3
         
