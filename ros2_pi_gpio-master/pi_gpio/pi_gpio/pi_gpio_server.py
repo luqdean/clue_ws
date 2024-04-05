@@ -6,37 +6,58 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from pi_gpio_interface.action import GPIO as GPIO_Action #rename
-import RPi.GPIO as GPIO
+import lgpio as GPIO
 
 
 
+# class RaspberryPIGPIO():
+#     def __init__(self, pin_id):
+#         self.pin_id = pin_id
+#         GPIO.setwarnings(False)
+#         GPIO.setmode(GPIO.BCM)
+#         GPIO.setup(pin_id, GPIO.OUT) #Set pin as output
+#         print ("Setting GPIO " + str(self.pin_id))
+#         time.sleep(0.1)
+#         self.pwm = GPIO.PWM(self.pin_id, 50)
+#         self.pwm.start(0)
+
+    
+#     def set_pin(self,direction):
+
+#         if direction < 0:
+#             direction = 0
+#         elif direction > 180:
+#             direction = 180
+
+#         a = 10 
+#         b = 2
+
+#         duty = a / 180 * direction + b
+
+#         self.pwm.ChangeDutyCycle(duty)
+
+#         print("direction ="), direction, "-> duty =", duty
+#         time.sleep(1) 
 class RaspberryPIGPIO():
     def __init__(self, pin_id):
         self.pin_id = pin_id
-        GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(pin_id, GPIO.OUT) #Set pin as output
-        print ("Setting GPIO " + str(self.pin_id))
+        self.h = GPIO.gpiochip_open(0)  
+        GPIO.tx_pwm(self.h, self.pin_id, 50, 0)  
+        print("Setting GPIO " + str(self.pin_id))
         time.sleep(0.1)
-        self.pwm = GPIO.PWM(self.pin_id, 50)
-        self.pwm.start(0)
 
-    
-    def set_pin(self,direction):
-
+    def set_pin(self, direction):
         if direction < 0:
             direction = 0
-        elif direction > 180:
-            direction = 180
-
-        a = 10 
+        elif direction > 360:
+            direction = 360
+        a = 10
         b = 2
+        duty = (a / 360) * direction + b
+        GPIO.tx_pwm(self.h, self.pin_id, 50, duty)
 
-        duty = a / 180 * direction + b
-
-        self.pwm.ChangeDutyCycle(duty)
-        print("direction ="), direction, "-> duty =", duty
-        time.sleep(1) 
+        print("Change direction to ", direction, "-> duty =", duty)
+        time.sleep(1)
 
 class GPIOActionServer(Node):
 
