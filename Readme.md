@@ -1,5 +1,7 @@
-
-
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+sudo su
+ros2 action send_goal pi_gpio_server pi_gpio_interface/action/GPIO {'direction: "50"'}
 
 #Redfine the Github to avoid DNS attack Location SZ CN
 
