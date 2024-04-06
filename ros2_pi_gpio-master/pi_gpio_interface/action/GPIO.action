@@ -1,5 +1,5 @@
 # Goal
-int16 gpio
+int16 direction
 ---
 # Result
 int32 value
