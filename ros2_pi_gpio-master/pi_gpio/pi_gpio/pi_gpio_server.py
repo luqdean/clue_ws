@@ -63,7 +63,7 @@ class GPIOActionServer(Node):
 
     def __init__(self):
         super().__init__('pi_gpio_server')
-        pin_id=17
+        pin_id=11
         self.pin_dic = {}
         self.pin_dic[pin_id] =  RaspberryPIGPIO(pin_id)
 
@@ -129,7 +129,7 @@ class GPIOActionServer(Node):
         goal_handle.publish_feedback(feedback_msg)
 
         direction = goal_msg  
-        self.pin_dic[17].set_pin(direction)
+        self.pin_dic[11].set_pin(direction)
         time.sleep(0.1)
         result.value = 3
         
