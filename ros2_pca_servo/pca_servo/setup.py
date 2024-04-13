@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    author='H. Melih Erdogan',
-    author_email='h.meliherdogan@gmail.com',
-    maintainer='H. Melih Erdogan',
-    maintainer_email='h.meliherdogan@gmail.com',
+    author='abcdh',
+    author_email='abc11@gmail.com',
+    maintainer='abcdh',
+    maintainer_email='abc11@gmail.com',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
@@ -29,7 +29,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pi_gpio_server = ' + package_name + '.pi_gpio_server:main',
+            'pca_servo_server = ' + package_name + '.pca_servo_server:main',
         ],
     },
 )

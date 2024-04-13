@@ -5,7 +5,7 @@ from rclpy.action import ActionServer, CancelResponse, GoalResponse
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
-from pi_gpio_interface.action import GPIO as GPIO_Action #rename
+from pca_servo_interface.action import PCAServo as PCAServo_Action #rename
 from adafruit_servokit import ServoKit
 
 
@@ -32,7 +32,7 @@ class PCA9685Servo():
 class PCAServoNode(Node):
 
     def __init__(self):
-        super().__init__('pi_gpio_server')
+        super().__init__('pca_servo_server')
         servo_id=11
         self.servo_dic = {}
         self.servo_dic[servo_id] =  PCA9685Servo(servo_id)
@@ -43,8 +43,8 @@ class PCAServoNode(Node):
         #Node, action_type, action_name, execute_callback
         self._action_server = ActionServer(
             self,
-            GPIO_Action,#interface
-            'pi_gpio_server',
+            PCAServo_Action,#interface
+            'pca_servo_server',
             execute_callback=self.execute_callback,
             goal_callback=self.goal_callback,
             handle_accepted_callback=self.handle_accepted_callback,
@@ -80,20 +80,20 @@ class PCAServoNode(Node):
         goal_msg = goal_handle.request.direction
 
         # Populate feedback message
-        feedback_msg = GPIO_Action.Feedback()
+        feedback_msg = PCAServo_Action.Feedback()
         feedback_msg.feedback = 1
 
         # Populate result message
-        result = GPIO_Action.Result()
+        result = PCAServo_Action.Result()
 
         if not goal_handle.is_active:
             self.get_logger().info('Goal aborted')
-            return GPIO_Action.Result()
+            return PCAServo_Action.Result()
 
         if goal_handle.is_cancel_requested:
             goal_handle.canceled()
             self.get_logger().info('Goal canceled')
-            return GPIO_Action.Result()
+            return PCAServo_Action.Result()
 
         # Publish the feedback
         goal_handle.publish_feedback(feedback_msg)
