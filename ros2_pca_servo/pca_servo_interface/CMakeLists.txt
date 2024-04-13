@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(pi_gpio_interface)
+project(pca_servo_interface)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -14,7 +14,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/GPIO.action"
+  "action/PCAServo.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

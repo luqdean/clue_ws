@@ -5,12 +5,13 @@
   <version>0.8.2</version>
   <description>ROS2 action server to control Raspberry Pi GPIO</description>
 
-  <maintainer email="abc11@gmail.com">H. Melih Erdogan</maintainer>
+  <maintainer email="abc11@gmail.com">abc11</maintainer>
   <license>Apache License 2.0</license>
 
-  <author email="abc11@gmail.com">H. Melih Erdogan</author>
+  <author email="abc11@gmail.com">abc11</author>
 
   <exec_depend>pca_servo_server</exec_depend>
+  <exec_depend>adafruit_servokit</exec_depend>
   <exec_depend>rclpy</exec_depend>
 
   <!-- These test dependencies are optional

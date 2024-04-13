@@ -1,3 +1,3 @@
-pi_gpio_interface
+pca_servo_interface
 =========================
 action definition package
