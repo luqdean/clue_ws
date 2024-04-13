@@ -6,66 +6,36 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from pi_gpio_interface.action import GPIO as GPIO_Action #rename
-import lgpio as GPIO
+from adafruit_servokit import ServoKit
 
 
 
-# class RaspberryPIGPIO():
-#     def __init__(self, pin_id):
-#         self.pin_id = pin_id
-#         GPIO.setwarnings(False)
-#         GPIO.setmode(GPIO.BCM)
-#         GPIO.setup(pin_id, GPIO.OUT) #Set pin as output
-#         print ("Setting GPIO " + str(self.pin_id))
-#         time.sleep(0.1)
-#         self.pwm = GPIO.PWM(self.pin_id, 50)
-#         self.pwm.start(0)
+class PCA9685Servo():
+    kit = ServoKit(channels=16)
 
-    
-#     def set_pin(self,direction):
-
-#         if direction < 0:
-#             direction = 0
-#         elif direction > 180:
-#             direction = 180
-
-#         a = 10 
-#         b = 2
-
-#         duty = a / 180 * direction + b
-
-#         self.pwm.ChangeDutyCycle(duty)
-
-#         print("direction ="), direction, "-> duty =", duty
-#         time.sleep(1) 
-class RaspberryPIGPIO():
-    def __init__(self, pin_id):
-        self.pin_id = pin_id
-        self.h = GPIO.gpiochip_open(0)  
-        GPIO.tx_pwm(self.h, self.pin_id, 50, 0)  
-        print("Setting GPIO " + str(self.pin_id))
+    def __init__(self, servo_id):
+        self.servo_id = servo_id
+        print("Setting servo " + str(self.servo_id))
         time.sleep(0.1)
 
-    def set_pin(self, direction):
+    def set_servo(self, direction):
         if direction < 0:
             direction = 0
-        elif direction > 360:
-            direction = 360
-        a = 10
-        b = 2
-        duty = (a / 360) * direction + b
-        GPIO.tx_pwm(self.h, self.pin_id, 50, duty)
-
-        print("Change direction to ", direction, "-> duty =", duty)
+        elif direction > 180:
+            direction = 180
+        self.kit.servo[self.servo_id].angle = direction
+        time.sleep(1)
+        self.kit.servo[self.servo_id].angle = direction
+        print("Change direction to ", direction)
         time.sleep(1)
 
-class GPIOActionServer(Node):
+class PCAServoNode(Node):
 
     def __init__(self):
         super().__init__('pi_gpio_server')
-        pin_id=11
-        self.pin_dic = {}
-        self.pin_dic[pin_id] =  RaspberryPIGPIO(pin_id)
+        servo_id=11
+        self.servo_dic = {}
+        self.servo_dic[servo_id] =  PCA9685Servo(servo_id)
 
         self._goal_handle = None
         self._goal_lock = threading.Lock()
@@ -127,27 +97,23 @@ class GPIOActionServer(Node):
 
         # Publish the feedback
         goal_handle.publish_feedback(feedback_msg)
-
-        direction = goal_msg  
-        self.pin_dic[11].set_pin(direction)
+        servo_id, direction = goal_msg.split(',')    
+        self.servo_dic[servo_id].set_servo(direction)
         time.sleep(0.1)
         result.value = 3
-        
         goal_handle.succeed()
         return result
 
 def main(args=None):
     rclpy.init(args=args)
 
-    action_server = GPIOActionServer()
+    action_server = PCAServoNode()
 
     executor = MultiThreadedExecutor()
-    rclpy.spin(action_server, executor=executor)
+    rclpy.sservo(action_server, executor=executor)
 
     action_server.destroy()
-    
-    GPIO.cleanup()
-    
+      
     rclpy.shutdown()
 
 if __name__ == '__main__':
