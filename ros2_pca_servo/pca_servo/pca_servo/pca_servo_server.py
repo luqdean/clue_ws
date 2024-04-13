@@ -97,7 +97,9 @@ class PCAServoNode(Node):
 
         # Publish the feedback
         goal_handle.publish_feedback(feedback_msg)
-        servo_id, direction = goal_msg.split(',')    
+        servo_id, direction = goal_msg.split(',')
+        servo_id = int(servo_id)  
+        direction = int(direction)    
         self.servo_dic[servo_id].set_servo(direction)
         time.sleep(0.1)
         result.value = 3
@@ -110,7 +112,7 @@ def main(args=None):
     action_server = PCAServoNode()
 
     executor = MultiThreadedExecutor()
-    rclpy.sservo(action_server, executor=executor)
+    rclpy.spin(action_server, executor=executor)
 
     action_server.destroy()
       
