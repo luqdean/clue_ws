@@ -33,13 +33,8 @@ class PCAServoNode(Node):
 
     def __init__(self):
         super().__init__('pca_servo_server')
-        servo_id=11
-        self.servo_dic = {}
-        self.servo_dic[servo_id] =  PCA9685Servo(servo_id)
-
         self._goal_handle = None
         self._goal_lock = threading.Lock()
-
         #Node, action_type, action_name, execute_callback
         self._action_server = ActionServer(
             self,
