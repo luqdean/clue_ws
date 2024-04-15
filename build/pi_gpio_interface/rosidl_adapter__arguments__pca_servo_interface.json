@@ -1,0 +1,6 @@
+{
+  "package_name": "pca_servo_interface",
+  "non_idl_tuples": [
+    "/home/ad/clue_ws/ros2_pca_servo/pca_servo_interface:action/PCAServo.action"
+  ]
+}

@@ -1,0 +1,6 @@
+Invoking command in '/home/ad/clue_ws/build/pca_servo_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ad/clue_ws/ros2_pca_servo/pca_servo_interface -DCMAKE_INSTALL_PREFIX=/home/ad/clue_ws/install/pca_servo_interface
+Invoked command in '/home/ad/clue_ws/build/pca_servo_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ad/clue_ws/ros2_pca_servo/pca_servo_interface -DCMAKE_INSTALL_PREFIX=/home/ad/clue_ws/install/pca_servo_interface
+Invoking command in '/home/ad/clue_ws/build/pca_servo_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ad/clue_ws/build/pca_servo_interface -- -j8 -l8
+Invoked command in '/home/ad/clue_ws/build/pca_servo_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ad/clue_ws/build/pca_servo_interface -- -j8 -l8
+Invoking command in '/home/ad/clue_ws/build/pca_servo_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ad/clue_ws/build/pca_servo_interface
+Invoked command in '/home/ad/clue_ws/build/pca_servo_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ad/clue_ws/build/pca_servo_interface

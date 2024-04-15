@@ -1,0 +1,3 @@
+[console_scripts]
+pca_servo_server = pi_gpio.pca_servo_server:main
+

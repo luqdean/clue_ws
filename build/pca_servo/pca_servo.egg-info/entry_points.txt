@@ -1,0 +1,3 @@
+[console_scripts]
+pca_servo_server = pca_servo.pca_servo_server:main
+

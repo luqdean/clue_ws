@@ -1,0 +1,4 @@
+source;share/pca_servo_interface/environment/ament_prefix_path.sh
+source;share/pca_servo_interface/environment/library_path.sh
+source;share/pca_servo_interface/environment/path.sh
+source;share/pca_servo_interface/environment/pythonpath.sh

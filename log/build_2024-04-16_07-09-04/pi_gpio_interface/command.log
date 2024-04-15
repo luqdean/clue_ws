@@ -1,0 +1,2 @@
+Invoking command in '/home/ad/clue_ws/build/pi_gpio_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ad/clue_ws/ros2_pca_servo/pca_servo_interface -DCMAKE_INSTALL_PREFIX=/home/ad/clue_ws/install/pi_gpio_interface
+Invoked command in '/home/ad/clue_ws/build/pi_gpio_interface' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ad/clue_ws/ros2_pca_servo/pca_servo_interface -DCMAKE_INSTALL_PREFIX=/home/ad/clue_ws/install/pi_gpio_interface

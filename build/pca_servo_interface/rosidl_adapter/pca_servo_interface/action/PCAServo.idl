@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pca_servo_interface/action/PCAServo.action
+// generated code does not contain a copyright notice
+
+
+module pca_servo_interface {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct PCAServo_Goal {
+      int16 direction;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct PCAServo_Result {
+      int32 value;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct PCAServo_Feedback {
+      int32 feedback;
+    };
+  };
+};

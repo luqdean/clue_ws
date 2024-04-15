@@ -1,0 +1,21 @@
+[0.832s] Invoking command in '/home/ad/clue_ws/ros2_pca_servo/pca_servo': PYTHONPATH=/home/ad/clue_ws/build/pca_servo/prefix_override:/home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pca_servo build --build-base /home/ad/clue_ws/build/pca_servo/build install --record /home/ad/clue_ws/build/pca_servo/install.log --single-version-externally-managed install_data
+[1.096s] running egg_info
+[1.097s] writing ../../build/pca_servo/pca_servo.egg-info/PKG-INFO
+[1.098s] writing dependency_links to ../../build/pca_servo/pca_servo.egg-info/dependency_links.txt
+[1.098s] writing entry points to ../../build/pca_servo/pca_servo.egg-info/entry_points.txt
+[1.098s] writing requirements to ../../build/pca_servo/pca_servo.egg-info/requires.txt
+[1.098s] writing top-level names to ../../build/pca_servo/pca_servo.egg-info/top_level.txt
+[1.100s] reading manifest file '../../build/pca_servo/pca_servo.egg-info/SOURCES.txt'
+[1.101s] adding license file 'LICENSE'
+[1.102s] writing manifest file '../../build/pca_servo/pca_servo.egg-info/SOURCES.txt'
+[1.102s] running build
+[1.102s] running build_py
+[1.102s] running install
+[1.103s] running install_lib
+[1.104s] running install_data
+[1.105s] running install_egg_info
+[1.107s] removing '/home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages/pca_servo-0.8.2-py3.10.egg-info' (and everything under it)
+[1.108s] Copying ../../build/pca_servo/pca_servo.egg-info to /home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages/pca_servo-0.8.2-py3.10.egg-info
+[1.109s] running install_scripts
+[1.138s] Installing pca_servo_server script to /home/ad/clue_ws/install/pca_servo/lib/pi_gpio
+[1.139s] writing list of installed files to '/home/ad/clue_ws/build/pca_servo/install.log'

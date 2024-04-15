@@ -1,0 +1,398 @@
+[0.000000] (-) TimerEvent: {}
+[0.001712] (pca_servo) JobQueued: {'identifier': 'pca_servo', 'dependencies': OrderedDict()}
+[0.001805] (pca_servo_interface) JobQueued: {'identifier': 'pca_servo_interface', 'dependencies': OrderedDict()}
+[0.002014] (pca_servo) JobStarted: {'identifier': 'pca_servo'}
+[0.012047] (pca_servo_interface) JobStarted: {'identifier': 'pca_servo_interface'}
+[0.100032] (-) TimerEvent: {}
+[0.200392] (-) TimerEvent: {}
+[0.300766] (-) TimerEvent: {}
+[0.331073] (pca_servo_interface) JobProgress: {'identifier': 'pca_servo_interface', 'progress': 'cmake'}
+[0.331669] (pca_servo_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ad/clue_ws/ros2_pca_servo/pca_servo_interface', '-DCMAKE_INSTALL_PREFIX=/home/ad/clue_ws/install/pca_servo_interface'], 'cwd': '/home/ad/clue_ws/build/pca_servo_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ad'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ad'), ('OLDPWD', '/home/ad'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ad'), ('NAME', 'DESKTOP-EBJIAE4'), ('WSL_INTEROP', '/run/WSL/362_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/allen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/allen/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ad/clue_ws/build/pca_servo_interface'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.400928] (-) TimerEvent: {}
+[0.501298] (-) TimerEvent: {}
+[0.540974] (pca_servo_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601435] (-) TimerEvent: {}
+[0.701872] (-) TimerEvent: {}
+[0.712235] (pca_servo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pca_servo', 'build', '--build-base', '/home/ad/clue_ws/build/pca_servo/build', 'install', '--record', '/home/ad/clue_ws/build/pca_servo/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ad/clue_ws/ros2_pca_servo/pca_servo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ad', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/ad', 'OLDPWD': '/home/ad', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ad', 'NAME': 'DESKTOP-EBJIAE4', 'WSL_INTEROP': '/run/WSL/362_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/allen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/allen/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ad/clue_ws/build/pca_servo', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ad/clue_ws/build/pca_servo/prefix_override:/home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.802106] (-) TimerEvent: {}
+[0.902560] (-) TimerEvent: {}
+[0.971433] (pca_servo) StdoutLine: {'line': b'running egg_info\n'}
+[0.972401] (pca_servo) StdoutLine: {'line': b'writing ../../build/pca_servo/pca_servo.egg-info/PKG-INFO\n'}
+[0.972846] (pca_servo) StdoutLine: {'line': b'writing dependency_links to ../../build/pca_servo/pca_servo.egg-info/dependency_links.txt\n'}
+[0.973168] (pca_servo) StdoutLine: {'line': b'writing entry points to ../../build/pca_servo/pca_servo.egg-info/entry_points.txt\n'}
+[0.973589] (pca_servo) StdoutLine: {'line': b'writing requirements to ../../build/pca_servo/pca_servo.egg-info/requires.txt\n'}
+[0.973776] (pca_servo) StdoutLine: {'line': b'writing top-level names to ../../build/pca_servo/pca_servo.egg-info/top_level.txt\n'}
+[0.975687] (pca_servo) StdoutLine: {'line': b"reading manifest file '../../build/pca_servo/pca_servo.egg-info/SOURCES.txt'\n"}
+[0.975951] (pca_servo) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.976868] (pca_servo) StdoutLine: {'line': b"writing manifest file '../../build/pca_servo/pca_servo.egg-info/SOURCES.txt'\n"}
+[0.977141] (pca_servo) StdoutLine: {'line': b'running build\n'}
+[0.977239] (pca_servo) StdoutLine: {'line': b'running build_py\n'}
+[0.977473] (pca_servo) StdoutLine: {'line': b'running install\n'}
+[0.977783] (pca_servo) StdoutLine: {'line': b'running install_lib\n'}
+[0.979103] (pca_servo) StdoutLine: {'line': b'running install_data\n'}
+[0.979435] (pca_servo) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.981464] (pca_servo) StdoutLine: {'line': b"removing '/home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages/pca_servo-0.8.2-py3.10.egg-info' (and everything under it)\n"}
+[0.981832] (pca_servo) StdoutLine: {'line': b'Copying ../../build/pca_servo/pca_servo.egg-info to /home/ad/clue_ws/install/pca_servo/lib/python3.10/site-packages/pca_servo-0.8.2-py3.10.egg-info\n'}
+[0.983020] (pca_servo) StdoutLine: {'line': b'running install_scripts\n'}
+[1.002698] (-) TimerEvent: {}
+[1.008234] (pca_servo) StdoutLine: {'line': b'Installing pca_servo_server script to /home/ad/clue_ws/install/pca_servo/lib/pi_gpio\n'}
+[1.008749] (pca_servo) StdoutLine: {'line': b"writing list of installed files to '/home/ad/clue_ws/build/pca_servo/install.log'\n"}
+[1.041437] (pca_servo) CommandEnded: {'returncode': 0}
+[1.055708] (pca_servo) JobEnded: {'identifier': 'pca_servo', 'rc': 0}
+[1.102911] (-) TimerEvent: {}
+[1.203370] (-) TimerEvent: {}
+[1.215874] (pca_servo_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.303494] (-) TimerEvent: {}
+[1.403892] (-) TimerEvent: {}
+[1.504262] (-) TimerEvent: {}
+[1.605171] (-) TimerEvent: {}
+[1.705627] (-) TimerEvent: {}
+[1.806322] (-) TimerEvent: {}
+[1.903416] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.906460] (-) TimerEvent: {}
+[2.007371] (-) TimerEvent: {}
+[2.108646] (-) TimerEvent: {}
+[2.209682] (-) TimerEvent: {}
+[2.310728] (-) TimerEvent: {}
+[2.411881] (-) TimerEvent: {}
+[2.512879] (-) TimerEvent: {}
+[2.613817] (-) TimerEvent: {}
+[2.714691] (-) TimerEvent: {}
+[2.718614] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.735836] (pca_servo_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.736475] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.737395] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.748341] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.815083] (-) TimerEvent: {}
+[2.916166] (-) TimerEvent: {}
+[3.017102] (-) TimerEvent: {}
+[3.118225] (-) TimerEvent: {}
+[3.219497] (-) TimerEvent: {}
+[3.320459] (-) TimerEvent: {}
+[3.421468] (-) TimerEvent: {}
+[3.443783] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.454097] (pca_servo_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.454532] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.455216] (pca_servo_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.457827] (pca_servo_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.521681] (-) TimerEvent: {}
+[3.622114] (-) TimerEvent: {}
+[3.701959] (pca_servo_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.722352] (-) TimerEvent: {}
+[3.822861] (-) TimerEvent: {}
+[3.856839] (pca_servo_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.861259] (pca_servo_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.870379] (pca_servo_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.923071] (-) TimerEvent: {}
+[4.023447] (-) TimerEvent: {}
+[4.123830] (-) TimerEvent: {}
+[4.224322] (-) TimerEvent: {}
+[4.261522] (pca_servo_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.324474] (-) TimerEvent: {}
+[4.424878] (-) TimerEvent: {}
+[4.525251] (-) TimerEvent: {}
+[4.625673] (-) TimerEvent: {}
+[4.712432] (pca_servo_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.726115] (-) TimerEvent: {}
+[4.826958] (-) TimerEvent: {}
+[4.927838] (-) TimerEvent: {}
+[5.028490] (-) TimerEvent: {}
+[5.128955] (-) TimerEvent: {}
+[5.174076] (pca_servo_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.229278] (-) TimerEvent: {}
+[5.329770] (-) TimerEvent: {}
+[5.430267] (-) TimerEvent: {}
+[5.530655] (-) TimerEvent: {}
+[5.575536] (pca_servo_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.630800] (-) TimerEvent: {}
+[5.731143] (-) TimerEvent: {}
+[5.796015] (pca_servo_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.831497] (-) TimerEvent: {}
+[5.846549] (pca_servo_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.931738] (-) TimerEvent: {}
+[6.032436] (-) TimerEvent: {}
+[6.133572] (-) TimerEvent: {}
+[6.234529] (-) TimerEvent: {}
+[6.335279] (-) TimerEvent: {}
+[6.435852] (-) TimerEvent: {}
+[6.536504] (-) TimerEvent: {}
+[6.637182] (-) TimerEvent: {}
+[6.738023] (-) TimerEvent: {}
+[6.838528] (-) TimerEvent: {}
+[6.939595] (-) TimerEvent: {}
+[7.040080] (-) TimerEvent: {}
+[7.140553] (-) TimerEvent: {}
+[7.241296] (-) TimerEvent: {}
+[7.341904] (-) TimerEvent: {}
+[7.442445] (-) TimerEvent: {}
+[7.543226] (-) TimerEvent: {}
+[7.554771] (pca_servo_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[7.555141] (pca_servo_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.555376] (pca_servo_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[7.555524] (pca_servo_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[7.616227] (pca_servo_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[7.643422] (-) TimerEvent: {}
+[7.744011] (-) TimerEvent: {}
+[7.844693] (-) TimerEvent: {}
+[7.945676] (-) TimerEvent: {}
+[8.006119] (pca_servo_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.045808] (-) TimerEvent: {}
+[8.072033] (pca_servo_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[8.075451] (pca_servo_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ad/clue_ws/build/pca_servo_interface\n'}
+[8.083511] (pca_servo_interface) CommandEnded: {'returncode': 0}
+[8.084493] (pca_servo_interface) JobProgress: {'identifier': 'pca_servo_interface', 'progress': 'build'}
+[8.087924] (pca_servo_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ad/clue_ws/build/pca_servo_interface', '--', '-j8', '-l8'], 'cwd': '/home/ad/clue_ws/build/pca_servo_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ad'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ad'), ('OLDPWD', '/home/ad'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ad'), ('NAME', 'DESKTOP-EBJIAE4'), ('WSL_INTEROP', '/run/WSL/362_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/allen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/allen/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ad/clue_ws/build/pca_servo_interface'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.146286] (-) TimerEvent: {}
+[8.181108] (pca_servo_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.225775] (pca_servo_interface) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.244984] (pca_servo_interface) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_pca_servo_interface\n'}
+[8.246447] (-) TimerEvent: {}
+[8.347061] (-) TimerEvent: {}
+[8.447454] (-) TimerEvent: {}
+[8.523724] (pca_servo_interface) StdoutLine: {'line': b'running egg_info\n'}
+[8.524392] (pca_servo_interface) StdoutLine: {'line': b'creating pca_servo_interface.egg-info\n'}
+[8.524752] (pca_servo_interface) StdoutLine: {'line': b'writing pca_servo_interface.egg-info/PKG-INFO\n'}
+[8.525156] (pca_servo_interface) StdoutLine: {'line': b'writing dependency_links to pca_servo_interface.egg-info/dependency_links.txt\n'}
+[8.525271] (pca_servo_interface) StdoutLine: {'line': b'writing top-level names to pca_servo_interface.egg-info/top_level.txt\n'}
+[8.525501] (pca_servo_interface) StdoutLine: {'line': b"writing manifest file 'pca_servo_interface.egg-info/SOURCES.txt'\n"}
+[8.527524] (pca_servo_interface) StdoutLine: {'line': b"reading manifest file 'pca_servo_interface.egg-info/SOURCES.txt'\n"}
+[8.528087] (pca_servo_interface) StdoutLine: {'line': b"writing manifest file 'pca_servo_interface.egg-info/SOURCES.txt'\n"}
+[8.547623] (-) TimerEvent: {}
+[8.559457] (pca_servo_interface) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_pca_servo_interface_egg\n'}
+[8.647789] (-) TimerEvent: {}
+[8.748154] (-) TimerEvent: {}
+[8.837668] (pca_servo_interface) StdoutLine: {'line': b'[  6%] Built target pca_servo_interface__cpp\n'}
+[8.848353] (-) TimerEvent: {}
+[8.850887] (pca_servo_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.852170] (pca_servo_interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.853006] (pca_servo_interface) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.859349] (pca_servo_interface) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_generator_c.dir/rosidl_generator_c/pca_servo_interface/action/detail/pca_servo__functions.c.o\x1b[0m\n'}
+[8.948518] (-) TimerEvent: {}
+[9.049027] (-) TimerEvent: {}
+[9.083540] (pca_servo_interface) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libpca_servo_interface__rosidl_generator_c.so\x1b[0m\n'}
+[9.149205] (-) TimerEvent: {}
+[9.249637] (-) TimerEvent: {}
+[9.272772] (pca_servo_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pca_servo_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pca_servo_interface/action/pca_servo__type_support.cpp.o\x1b[0m\n'}
+[9.281510] (pca_servo_interface) StdoutLine: {'line': b'[ 25%] Built target pca_servo_interface__rosidl_generator_c\n'}
+[9.294107] (pca_servo_interface) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.296563] (pca_servo_interface) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.296851] (pca_servo_interface) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.349805] (-) TimerEvent: {}
+[9.396898] (pca_servo_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/pca_servo_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pca_servo_interface/action/detail/pca_servo__type_support.cpp.o\x1b[0m\n'}
+[9.449949] (-) TimerEvent: {}
+[9.550374] (-) TimerEvent: {}
+[9.588033] (pca_servo_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/pca_servo_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pca_servo_interface/action/detail/dds_fastrtps/pca_servo__type_support.cpp.o\x1b[0m\n'}
+[9.650549] (-) TimerEvent: {}
+[9.751020] (-) TimerEvent: {}
+[9.794510] (pca_servo_interface) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/pca_servo_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/pca_servo_interface/action/pca_servo__type_support.cpp.o\x1b[0m\n'}
+[9.851244] (-) TimerEvent: {}
+[9.882925] (pca_servo_interface) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libpca_servo_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.951395] (-) TimerEvent: {}
+[10.022896] (pca_servo_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pca_servo_interface/action/detail/pca_servo__type_support.c.o\x1b[0m\n'}
+[10.051617] (-) TimerEvent: {}
+[10.102997] (pca_servo_interface) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/pca_servo_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pca_servo_interface/action/detail/pca_servo__type_support_c.cpp.o\x1b[0m\n'}
+[10.151899] (-) TimerEvent: {}
+[10.154287] (pca_servo_interface) StdoutLine: {'line': b'[ 54%] Built target pca_servo_interface__rosidl_typesupport_c\n'}
+[10.171679] (pca_servo_interface) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libpca_servo_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.251993] (-) TimerEvent: {}
+[10.311346] (pca_servo_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libpca_servo_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.352181] (-) TimerEvent: {}
+[10.398240] (pca_servo_interface) StdoutLine: {'line': b'[ 61%] Built target pca_servo_interface__rosidl_typesupport_introspection_c\n'}
+[10.452358] (-) TimerEvent: {}
+[10.533753] (pca_servo_interface) StdoutLine: {'line': b'[ 61%] Built target pca_servo_interface__rosidl_typesupport_cpp\n'}
+[10.552548] (-) TimerEvent: {}
+[10.559403] (pca_servo_interface) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libpca_servo_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.652514] (pca_servo_interface) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libpca_servo_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.652843] (-) TimerEvent: {}
+[10.753335] (-) TimerEvent: {}
+[10.758025] (pca_servo_interface) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libpca_servo_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.814845] (pca_servo_interface) StdoutLine: {'line': b'[ 70%] Built target pca_servo_interface__rosidl_typesupport_introspection_cpp\n'}
+[10.853517] (-) TimerEvent: {}
+[10.911233] (pca_servo_interface) StdoutLine: {'line': b'[ 70%] Built target pca_servo_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[10.953703] (-) TimerEvent: {}
+[11.054192] (-) TimerEvent: {}
+[11.055309] (pca_servo_interface) StdoutLine: {'line': b'[ 70%] Built target pca_servo_interface__rosidl_typesupport_fastrtps_c\n'}
+[11.084963] (pca_servo_interface) StdoutLine: {'line': b'[ 70%] Built target pca_servo_interface\n'}
+[11.115907] (pca_servo_interface) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.154396] (-) TimerEvent: {}
+[11.254909] (-) TimerEvent: {}
+[11.355284] (-) TimerEvent: {}
+[11.455738] (-) TimerEvent: {}
+[11.556363] (-) TimerEvent: {}
+[11.656754] (-) TimerEvent: {}
+[11.757173] (-) TimerEvent: {}
+[11.857510] (-) TimerEvent: {}
+[11.958052] (-) TimerEvent: {}
+[12.058867] (-) TimerEvent: {}
+[12.159268] (-) TimerEvent: {}
+[12.172271] (pca_servo_interface) StdoutLine: {'line': b'[ 74%] Built target pca_servo_interface__py\n'}
+[12.215194] (pca_servo_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_generator_py.dir/rosidl_generator_py/pca_servo_interface/action/_pca_servo_s.c.o\x1b[0m\n'}
+[12.259492] (-) TimerEvent: {}
+[12.360037] (-) TimerEvent: {}
+[12.460646] (-) TimerEvent: {}
+[12.561204] (-) TimerEvent: {}
+[12.627836] (pca_servo_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pca_servo_interface/libpca_servo_interface__rosidl_generator_py.so\x1b[0m\n'}
+[12.661711] (-) TimerEvent: {}
+[12.763155] (-) TimerEvent: {}
+[12.863743] (-) TimerEvent: {}
+[12.964149] (-) TimerEvent: {}
+[12.982180] (pca_servo_interface) StdoutLine: {'line': b'[ 80%] Built target pca_servo_interface__rosidl_generator_py\n'}
+[13.009424] (pca_servo_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[13.009834] (pca_servo_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[13.010345] (pca_servo_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pca_servo_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[13.064358] (-) TimerEvent: {}
+[13.164818] (-) TimerEvent: {}
+[13.186722] (pca_servo_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.191293] (pca_servo_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.194301] (pca_servo_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.264954] (-) TimerEvent: {}
+[13.319551] (pca_servo_interface) StdoutLine: {'line': b'[100%] Built target pca_servo_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.320055] (pca_servo_interface) StdoutLine: {'line': b'[100%] Built target pca_servo_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[13.364639] (pca_servo_interface) StdoutLine: {'line': b'[100%] Built target pca_servo_interface__rosidl_typesupport_c__pyext\n'}
+[13.365228] (-) TimerEvent: {}
+[13.377622] (pca_servo_interface) CommandEnded: {'returncode': 0}
+[13.465656] (-) TimerEvent: {}
+[13.564198] (pca_servo_interface) JobProgress: {'identifier': 'pca_servo_interface', 'progress': 'install'}
+[13.565876] (-) TimerEvent: {}
+[13.594763] (pca_servo_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ad/clue_ws/build/pca_servo_interface'], 'cwd': '/home/ad/clue_ws/build/pca_servo_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ad'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ad'), ('OLDPWD', '/home/ad'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ad'), ('NAME', 'DESKTOP-EBJIAE4'), ('WSL_INTEROP', '/run/WSL/362_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/cunit/lib:/mnt/c/ProgramData/chocolatey/lib/tinyxml2/lib:/mnt/c/ProgramData/chocolatey/lib/bullet/lib:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/allen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/allen/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ad/clue_ws/build/pca_servo_interface'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.621142] (pca_servo_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.623819] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/ament_index/resource_index/rosidl_interfaces/pca_servo_interface\n'}
+[13.624885] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.626234] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg\n'}
+[13.626809] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.627717] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.628777] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/pca_servo.h\n'}
+[13.629592] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.630849] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__functions.h\n'}
+[13.631295] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__functions.c\n'}
+[13.632039] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__struct.h\n'}
+[13.632493] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__type_support.h\n'}
+[13.633103] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/library_path.sh\n'}
+[13.633361] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/library_path.dsv\n'}
+[13.634367] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_generator_c.so\n'}
+[13.636403] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_generator_c.so" to ""\n'}
+[13.636831] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.637468] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg\n'}
+[13.637841] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.638290] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.638457] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.638693] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__rosidl_typesupport_fastrtps_c.h\n'}
+[13.638860] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[13.639653] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.640034] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.640640] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg\n'}
+[13.641220] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.641516] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.641691] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.641839] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__rosidl_typesupport_introspection_c.h\n'}
+[13.642267] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__type_support.c\n'}
+[13.642457] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_introspection_c.so\n'}
+[13.642675] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.642846] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_c.so\n'}
+[13.643303] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_c.so" to ""\n'}
+[13.643824] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.644351] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.644732] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/pca_servo.hpp\n'}
+[13.645159] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.645743] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__struct.hpp\n'}
+[13.646184] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__builder.hpp\n'}
+[13.646355] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__traits.hpp\n'}
+[13.646774] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.647292] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg\n'}
+[13.647674] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.648199] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.648813] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.649518] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/dds_fastrtps\n'}
+[13.650049] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.650236] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.650479] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.650658] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface\n'}
+[13.650807] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action\n'}
+[13.651185] (pca_servo_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail\n'}
+[13.651649] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.651818] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/include/pca_servo_interface/pca_servo_interface/action/detail/pca_servo__type_support.cpp\n'}
+[13.652120] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[13.652440] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.652904] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_cpp.so\n'}
+[13.653339] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[13.653788] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/pythonpath.sh\n'}
+[13.653954] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/pythonpath.dsv\n'}
+[13.654193] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface-0.7.1-py3.10.egg-info\n'}
+[13.654694] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface-0.7.1-py3.10.egg-info/PKG-INFO\n'}
+[13.654940] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface-0.7.1-py3.10.egg-info/SOURCES.txt\n'}
+[13.655692] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface-0.7.1-py3.10.egg-info/top_level.txt\n'}
+[13.655937] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface-0.7.1-py3.10.egg-info/dependency_links.txt\n'}
+[13.656153] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface\n'}
+[13.656716] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.657072] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/libpca_servo_interface__rosidl_generator_py.so\n'}
+[13.657810] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_c.c\n'}
+[13.658054] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.658268] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.658770] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/__init__.py\n'}
+[13.659011] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.659748] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/_pca_servo_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.660059] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action\n'}
+[13.660727] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action/_pca_servo_s.c\n'}
+[13.661355] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action/__init__.py\n'}
+[13.661607] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action/_pca_servo.py\n'}
+[13.666124] (-) TimerEvent: {}
+[13.766784] (-) TimerEvent: {}
+[13.783591] (pca_servo_interface) StdoutLine: {'line': b"Listing '/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface'...\n"}
+[13.783820] (pca_servo_interface) StdoutLine: {'line': b"Compiling '/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/__init__.py'...\n"}
+[13.783923] (pca_servo_interface) StdoutLine: {'line': b"Listing '/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action'...\n"}
+[13.784003] (pca_servo_interface) StdoutLine: {'line': b"Compiling '/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action/__init__.py'...\n"}
+[13.784080] (pca_servo_interface) StdoutLine: {'line': b"Compiling '/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/action/_pca_servo.py'...\n"}
+[13.789593] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.790103] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.790452] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.791007] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.791325] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.791871] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/local/lib/python3.10/dist-packages/pca_servo_interface/pca_servo_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.792002] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_generator_py.so\n'}
+[13.792610] (pca_servo_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ad/clue_ws/install/pca_servo_interface/lib/libpca_servo_interface__rosidl_generator_py.so" to ""\n'}
+[13.792958] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/action/PCAServo.idl\n'}
+[13.793250] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/action/PCAServo.action\n'}
+[13.793709] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/ament_index/resource_index/package_run_dependencies/pca_servo_interface\n'}
+[13.794103] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/ament_index/resource_index/parent_prefix_path/pca_servo_interface\n'}
+[13.794489] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/ament_prefix_path.sh\n'}
+[13.794620] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/ament_prefix_path.dsv\n'}
+[13.794965] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/path.sh\n'}
+[13.795173] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/environment/path.dsv\n'}
+[13.795580] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/local_setup.bash\n'}
+[13.795744] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/local_setup.sh\n'}
+[13.795879] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/local_setup.zsh\n'}
+[13.796195] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/local_setup.dsv\n'}
+[13.796326] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/package.dsv\n'}
+[13.796408] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/ament_index/resource_index/packages/pca_servo_interface\n'}
+[13.796712] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_generator_cExport.cmake\n'}
+[13.797147] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.797268] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.797522] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.797646] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.797887] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.798217] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_cExport.cmake\n'}
+[13.798357] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.798636] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_generator_cppExport.cmake\n'}
+[13.798759] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.799027] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.799169] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.799404] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.799747] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_cppExport.cmake\n'}
+[13.799872] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.800236] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_generator_pyExport.cmake\n'}
+[13.800404] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/export_pca_servo_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.800771] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[13.800930] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.801169] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.801532] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.801763] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.801934] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.802066] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.802321] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interfaceConfig.cmake\n'}
+[13.802420] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/cmake/pca_servo_interfaceConfig-version.cmake\n'}
+[13.802495] (pca_servo_interface) StdoutLine: {'line': b'-- Installing: /home/ad/clue_ws/install/pca_servo_interface/share/pca_servo_interface/package.xml\n'}
+[13.805171] (pca_servo_interface) CommandEnded: {'returncode': 0}
+[13.867091] (-) TimerEvent: {}
+[13.968645] (-) TimerEvent: {}
+[14.021458] (pca_servo_interface) JobEnded: {'identifier': 'pca_servo_interface', 'rc': 0}
+[14.026491] (-) EventReactorShutdown: {}

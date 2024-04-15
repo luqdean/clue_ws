@@ -1,0 +1,11 @@
+[1.382s] Invoking command in '/home/ad/clue_ws/ros2_pca_servo/pca_servo': PYTHONPATH=/home/ad/clue_ws/build/pi_gpio/prefix_override:/home/ad/clue_ws/install/pi_gpio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pi_gpio build --build-base /home/ad/clue_ws/build/pi_gpio/build install --record /home/ad/clue_ws/build/pi_gpio/install.log --single-version-externally-managed install_data
+[1.647s] running egg_info
+[1.648s] creating ../../build/pi_gpio/pi_gpio.egg-info
+[1.648s] writing ../../build/pi_gpio/pi_gpio.egg-info/PKG-INFO
+[1.648s] writing dependency_links to ../../build/pi_gpio/pi_gpio.egg-info/dependency_links.txt
+[1.649s] writing entry points to ../../build/pi_gpio/pi_gpio.egg-info/entry_points.txt
+[1.649s] writing requirements to ../../build/pi_gpio/pi_gpio.egg-info/requires.txt
+[1.649s] writing top-level names to ../../build/pi_gpio/pi_gpio.egg-info/top_level.txt
+[1.649s] writing manifest file '../../build/pi_gpio/pi_gpio.egg-info/SOURCES.txt'
+[1.650s] error: package directory 'pi_gpio' does not exist
+[1.677s] Invoked command in '/home/ad/clue_ws/ros2_pca_servo/pca_servo' returned '1': PYTHONPATH=/home/ad/clue_ws/build/pi_gpio/prefix_override:/home/ad/clue_ws/install/pi_gpio/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pi_gpio build --build-base /home/ad/clue_ws/build/pi_gpio/build install --record /home/ad/clue_ws/build/pi_gpio/install.log --single-version-externally-managed install_data

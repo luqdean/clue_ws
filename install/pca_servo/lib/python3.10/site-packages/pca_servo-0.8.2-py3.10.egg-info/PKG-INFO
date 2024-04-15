@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pca-servo
+Version: 0.8.2
+Summary: ROS2 Action Server to control Raspberry Pi GPIO
+Home-page: UNKNOWN
+Author: abcdh
+Author-email: abc11@gmail.com
+Maintainer: abcdh
+Maintainer-email: abc11@gmail.com
+License: Apache License, Version 2.0
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+License-File: LICENSE
+
+UNKNOWN
+
