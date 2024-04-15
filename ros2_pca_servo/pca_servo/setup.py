@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'pi_gpio'
+package_name = 'pca_servo'
 
 setup(
     name=package_name,
